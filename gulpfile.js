@@ -21,4 +21,4 @@ gulp.task('default', function (cb) {
   );
 });
 
-gulp.task('browser', ['browserify', 'watch']);
+gulp.task('develop', ['watch']);

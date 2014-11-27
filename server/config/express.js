@@ -13,7 +13,7 @@ var cookieParser = require('cookie-parser');
 var path = require('path');
 var config = require('./environment');
 var session = require('express-session');
-var liveReload = require('connect-livereload');
+// var liveReload = require('connect-livereload');
 // var mongoStore = require('connect-mongo')(session);
 // var mongoose = require('mongoose');
 
@@ -41,7 +41,7 @@ module.exports = function(app) {
   
 
   if (env === 'development' || env === 'test') {
-    app.use(liveReload());
+    // app.use(liveReload());
     app.use(express.static(path.join(config.root, 'client')));
     // app.set('appPath', 'client');
     // app.use(errorHandler()); // Error handler - has to be last
