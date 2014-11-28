@@ -2,6 +2,8 @@ var gulp = require('./gulp/index.js')([
   'clean',
   'sass',
   'watch',
+  'connect',
+  'reload',
   'browserify',
   'uglify',
   'minify-css',
@@ -21,4 +23,4 @@ gulp.task('default', function (cb) {
   );
 });
 
-gulp.task('develop', ['watch']);
+gulp.task('dev', ['watch', 'connect']);
