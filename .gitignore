@@ -1,4 +1,5 @@
 .DS_Store
 node_modules/
 dist/
-./client/**/*.scss
+client/**/*.css
+client/app/bundle.js
